@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="muT-l0-9FY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Wu0-uG-fP2">
+            <objects>
+                <viewController id="muT-l0-9FY" customClass="SplashViewController" customModule="MyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DIk-jR-NIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image True" translatesAutoresizingMaskIntoConstraints="NO" id="tLN-uM-AVl">
+                                <rect key="frame" x="30" y="159" width="433" height="589"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyTask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQl-fh-Zez">
+                                <rect key="frame" x="90" y="718" width="213" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xRe-Ac-QSR">
+                                <rect key="frame" x="186" y="660" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rni-pI-Ri5"/>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.54117647058823526" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tLN-uM-AVl" firstAttribute="top" secondItem="rni-pI-Ri5" secondAttribute="top" constant="100" id="54B-Pc-xQd"/>
+                            <constraint firstItem="rni-pI-Ri5" firstAttribute="trailing" secondItem="YQl-fh-Zez" secondAttribute="trailing" constant="90" id="KTj-xg-bXy"/>
+                            <constraint firstItem="rni-pI-Ri5" firstAttribute="bottom" secondItem="tLN-uM-AVl" secondAttribute="bottom" constant="70" id="LyH-RB-NJQ"/>
+                            <constraint firstItem="YQl-fh-Zez" firstAttribute="leading" secondItem="rni-pI-Ri5" secondAttribute="leading" constant="90" id="Y66-mZ-YmC"/>
+                            <constraint firstAttribute="trailing" secondItem="tLN-uM-AVl" secondAttribute="trailing" constant="-70" id="qT0-wv-SNT"/>
+                            <constraint firstItem="tLN-uM-AVl" firstAttribute="leading" secondItem="rni-pI-Ri5" secondAttribute="leading" constant="30" id="ta9-Pi-J6f"/>
+                            <constraint firstItem="rni-pI-Ri5" firstAttribute="bottom" secondItem="YQl-fh-Zez" secondAttribute="bottom" constant="40" id="wcu-pQ-fLc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwb-2x-iYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695.41984732824426" y="5.6338028169014089"/>
+        </scene>
+        <!--Introduction View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IntroductionViewController" id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="MyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image252" translatesAutoresizingMaskIntoConstraints="NO" id="4zw-rk-vqr">
+                                <rect key="frame" x="0.0" y="95" width="393" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep on track With MyTasks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emE-RA-ofF">
+                                <rect key="frame" x="10" y="413" width="373" height="76.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-uh-6pu">
+                                <rect key="frame" x="10" y="505.66666666666669" width="373" height="40.666666666666686"/>
+                                <string key="text">Make your task on track easily 
+and seamlessly</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iy-MP-OAJ">
+                                <rect key="frame" x="96" y="371" width="200" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-Dz-sPD">
+                                <rect key="frame" x="20" y="721" width="353" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Account">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="Net-yn-ddV" eventType="touchUpInside" id="ZZV-Oa-ndz"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rq8-pc-Vn8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-DP-rBN">
+                                <rect key="frame" x="20" y="788" width="172.33333333333334" height="20.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyi-Mo-9Yd">
+                                <rect key="frame" x="95" y="775" width="307" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTb-cb-Qhs" userLabel="Login Button">
+                                <rect key="frame" x="260" y="781" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4G-sS-icf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4zw-rk-vqr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="88L-rl-BH3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emE-RA-ofF" secondAttribute="trailing" constant="10" id="A8F-HD-WuR"/>
+                            <constraint firstAttribute="trailing" secondItem="6tV-uh-6pu" secondAttribute="trailing" constant="10" id="LmM-SN-X8G"/>
+                            <constraint firstItem="4zw-rk-vqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MWt-mT-UMR"/>
+                            <constraint firstItem="6tV-uh-6pu" firstAttribute="top" secondItem="emE-RA-ofF" secondAttribute="bottom" constant="16" id="Ro0-2X-LMn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4zw-rk-vqr" secondAttribute="trailing" id="Tti-Nx-grb"/>
+                            <constraint firstItem="6tV-uh-6pu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fYc-d3-HA6"/>
+                            <constraint firstItem="emE-RA-ofF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="i3u-RT-9qt"/>
+                            <constraint firstItem="emE-RA-ofF" firstAttribute="top" secondItem="4zw-rk-vqr" secondAttribute="bottom" constant="18" id="o0T-F1-Z6L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cbS-i8-6m7"/>
+                    <connections>
+                        <outlet property="CreateAccountButton" destination="XFt-Dz-sPD" id="rg9-Xx-edL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Net-yn-ddV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image True" width="319" height="598"/>
+        <image name="Image252" width="375" height="300"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
